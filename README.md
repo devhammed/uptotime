@@ -21,7 +21,7 @@ git clone git@github.com:devhammed/uptotime.git
 cd uptotime
 
 # Run the setup script
-composer run setup
+composer setup
 ```
 
 This will setup the project, create a `.env` file, generate an application key, and create a SQLite database file if it
@@ -35,7 +35,7 @@ prefer and don't forget to run migrations after.
 To start the development server, run:
 
 ```shell
-composer run dev
+composer dev
 ```
 
 This will start all the processes required for development, e.g., server, queue, scheduler, logs.
