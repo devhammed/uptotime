@@ -6,7 +6,7 @@ The Uptotime Platform.
 
 - PHP 8.4+
 - Laravel 13+
-- PostgreSQL 17+
+- PostgreSQL 17+ / MySQL 8+ / SQLite 3+
 - Node.js 24+
 
 ## Installation
@@ -24,7 +24,8 @@ cd uptotime
 composer run setup
 ```
 
-You should now open the `.env` file and configure the database connection settings.
+This will setup the project, create a `.env` file, generate an application key, and create a SQLite database file if it
+doesn't exist (you can change the database to any of PostgreSQL, MySQL, or SQLite in the `.env` file later).
 
 ## Development
 
