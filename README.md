@@ -25,7 +25,10 @@ composer run setup
 ```
 
 This will setup the project, create a `.env` file, generate an application key, and create a SQLite database file if it
-doesn't exist (you can change the database to any of PostgreSQL, MySQL, or SQLite in the `.env` file later).
+doesn't exist.
+
+This project has been tested with PostgreSQL, MySQL, and SQLite so you can update the `.env` file to use the one you
+prefer and don't forget to run migrations after.
 
 ## Development
 
