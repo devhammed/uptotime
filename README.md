@@ -41,8 +41,18 @@ at [http://localhost:8000/up](http://localhost:8000/up).
 
 ## Testing
 
-To run the tests in this repository, run:
+Run the test suite:
 
 ```shell
-composer run test
+composer test
 ```
+
+## Credits
+
+- [Hammed Oyedele](https://github.com/devhammed)
+
+## License
+
+This package is open-source software released under the MIT License.
+
+See [LICENSE.md](LICENSE.md) for details.
