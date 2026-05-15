@@ -6,15 +6,15 @@ namespace App\Http\Controllers\Monitor;
 
 use App\Models\Monitor;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Monitor\MonitorHistoryRequest;
 use Illuminate\Http\Resources\Json\ResourceCollection;
+use App\Http\Requests\Monitor\ListMonitorHistoryRequest;
 
 class MonitorHistoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(MonitorHistoryRequest $request, Monitor $monitor): ResourceCollection
+    public function index(ListMonitorHistoryRequest $request, Monitor $monitor): ResourceCollection
     {
         $perPage = $request->validated('per_page', 15);
 

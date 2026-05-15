@@ -6,7 +6,7 @@ namespace App\Http\Controllers\Monitor;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\MonitorResource;
-use App\Http\Requests\Monitor\MonitorListRequest;
+use App\Http\Requests\Monitor\ListMonitorRequest;
 use App\Http\Requests\Monitor\CreateMonitorRequest;
 use Illuminate\Http\Resources\Json\ResourceCollection;
 
@@ -15,7 +15,7 @@ class MonitorController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(MonitorListRequest $request): ResourceCollection
+    public function index(ListMonitorRequest $request): ResourceCollection
     {
         $perPage = $request->validated('per_page', 15);
 
