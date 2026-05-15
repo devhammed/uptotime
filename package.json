@@ -1,0 +1,7 @@
+{
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "concurrently": "^9.0.1"
+    }
+}
